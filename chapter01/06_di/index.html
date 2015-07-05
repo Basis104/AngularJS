@@ -8,9 +8,13 @@
 </head>
 
 <body>
+<p>X :<input type="text" ng-model="labelx"></p>
+<p>Y :<input type="text" ng-model="labely"></p>
+
 <div ng-controller="myController">
+  <p><input type="button" value="足し算！" ng-click="myFunction()" ></p>
   <div>
-    {{x}}
+    answer :{{x}}
   </div>
 </div>
 </body>
