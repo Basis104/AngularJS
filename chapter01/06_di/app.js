@@ -10,8 +10,8 @@
 })();
 (function () {
     var MyController = function ($scope, addService) {
-	$scope.x = addService(12, 34);
-	$scope.myFunction = function () {
+      $scope.x = addService(12, 34);
+      $scope.myFunction = function () {
 	    $scope.x = Number($scope.labelx) + Number($scope.labely);
 	};
     };

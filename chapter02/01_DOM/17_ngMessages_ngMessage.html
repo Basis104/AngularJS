@@ -15,7 +15,7 @@
     <p ng-message="500">Internal Server Error</p>
     <p ng-message="503">Service Unavailable</p>
   </div>
-  <p ng-show="!status.length">200, 400, 500, 503のどれかを入力してください</p>
+  <p ng-show="!status.length">200, 404, 500, 503のどれかを入力してください</p>
 
   <script>
     angular.module('myApp', ['ngMessages']).controller('myController', ['$scope', function($scope){
@@ -32,7 +32,6 @@
         angular.forEach($scope.statusList.messages, function(value, key){
           $scope.statusList.messages[key] = false;
         });
-
         if($scope.status in $scope.statusList.messages){
           $scope.statusList.messages[$scope.status] = true;
         }

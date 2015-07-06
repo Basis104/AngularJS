@@ -11,6 +11,10 @@
     <li ng-repeat="author in authors">{{ author }}</li>
   </ul>
 
+  <p>シンプルな配列</p>
+  <ul ng-init="authors=['can_i_do_web','zoetro','teyosh']">
+    <li>{{ authors }}</li>
+  </ul>
   <p>ハッシュオブジェクトの配列</p>
   <ul ng-init="authorsInfo=[
     { id: 1, name: 'can_i_do_web' },
@@ -27,7 +31,7 @@
   </ul>
 
   <p>インデックスを取得する</p>
-  <table ng-init="week=['Sun', 'Mon','Tue','Wed','Thu','Fri','Sat']">
+  <table ng-init="week=['test','Sun', 'Mon','Tue','Wed','Thu','Fri','Sat']">
     <thead>
       <tr>
         <th>day</th>
