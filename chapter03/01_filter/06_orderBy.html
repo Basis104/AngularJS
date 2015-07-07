@@ -16,6 +16,11 @@
   <li ng-repeat="person in myList | orderBy:'name'">{{ person.name }}</li>
 </ul>
 
+<p>ソートフィルター逆順</p>
+<ul>
+  <li ng-repeat="person in myList | orderBy:'name':true">{{ person.name }}</li>
+</ul>
+
 <script>
   angular.module('myApp', []).controller('myController', ['$scope', function ($scope) {
     $scope.myList = [
