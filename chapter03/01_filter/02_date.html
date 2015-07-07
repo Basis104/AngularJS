@@ -10,7 +10,7 @@
 
 <p>フィルター無し: {{ today }}</p>
 
-<p>フィルター: {{ today | date: 'yyyy年MM月dd日 HH時MM分ss.sss秒' }}</p>
+<p>フィルター: {{ today | date: 'yyyy年MM月dd日HH時mm分ss.sss秒' }}</p>
 
 <script>
   angular.module('myApp', []).controller('myController', ['$scope', function ($scope) {
