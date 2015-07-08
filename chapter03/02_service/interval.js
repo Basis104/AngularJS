@@ -4,5 +4,5 @@ app.controller('interval', ['$scope', '$interval', function ($scope, $interval) 
   $scope.count = count;
   $interval(function () {
     $scope.count = count++;
-  }, 100, 100);
+  }, 50, 300);
 }]);

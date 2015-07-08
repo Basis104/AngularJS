@@ -4,6 +4,6 @@ app.controller('timeout', ['$scope', '$timeout', function ($scope, $timeout) {
   $scope.count = count;
   var tp = $timeout(function () {
     $scope.count = 100;
-  }, 100);
+  }, 0);
   $timeout.cancel(tp);
 }]);
